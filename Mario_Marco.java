@@ -16,9 +16,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner; // import the scanner to be used
-
 import myClasses.Person;
-
 
 		public class Mario_Marco {
 			
@@ -32,30 +30,41 @@ import myClasses.Person;
 				
 				Person[] guests = new Person[500]; 
 				
-				// while the file has another line, read it to the next line.
-				while(inFile.hasNextLine()) {
+			// while the file has another line, read it to the next line.
+			while (inFile.hasNextLine()) {
+				
 					String fullName = inFile.nextLine();
 					
 					String[] names = fullName.split(" ");
+					
 					Person p = new Person();
+					
 					p.setFirstName(names[0]);
+					
 					p.setLastName(names[1]);
+					
 					guests[guestId] = p;
+					
 					guestId++ ;
 				}
 				
-					
-					for (int i = 0; i < guestId; i++) {
-						System.out.print(guests[i] + "\n");
+			for (int i = 0; i < guestId; i++) {
+						
+					System.out.print(guests[i] + "\n");
+						
 					}
 					
 			
 					System.out.println("Please enter number of guests attending the wedding: \n");
+					
 					Scanner scanner = new Scanner(System.in); //take input
-					numGuests = scanner.nextInt(); // Gathers user data for size of wedding.
+					
+						numGuests = scanner.nextInt(); // Gathers user data for size of wedding.
 					 
-						System.out.println("Please enter the desired number of people at each table: \n ");
-						Scanner scanner1 = new Scanner(System.in); //take input
+					System.out.println("Please enter the desired number of people at each table: \n ");
+					
+					Scanner scanner1 = new Scanner(System.in); //take input
+						
 						TableSize = scanner.nextInt(); // Gathers user data for size of each table
 						
 				
@@ -64,6 +73,7 @@ import myClasses.Person;
 					scanner.close();
 					scanner1.close();
 					inFile.close();
+					
 					}// end main
 				
 			

@@ -13,9 +13,8 @@
  *Description: This program will allow the user to input an amount of guests
  *and tables, and will be able to output each guest person's name in the output window. 
  */
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner; // import the scanner to be used
+import java.io.*;
+import java.util.*; // import the scanner to be used
 import myClasses.Person;
 
 		public class Mario_Marco {
@@ -53,6 +52,11 @@ import myClasses.Person;
 					System.out.print(guests[i] + "\n");
 						
 					}
+			
+			//The date of the wedding
+			
+			java.util.Date date = new java.util.Date();
+		    System.out.println("The big day is here!  "+ "\n" + date);
 					
 			
 					System.out.println("Please enter number of guests attending the wedding: \n");
@@ -66,9 +70,8 @@ import myClasses.Person;
 					Scanner scanner1 = new Scanner(System.in); //take input
 						
 						TableSize = scanner.nextInt(); // Gathers user data for size of each table
-						
-				
-					System.out.print(guestId + "\n");
+					
+					
 					
 					scanner.close();
 					scanner1.close();

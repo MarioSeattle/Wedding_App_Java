@@ -1,4 +1,3 @@
-import myClasses.Person.*;
 import java.io.*;
 import java.util.*;
 public class namesTxt {

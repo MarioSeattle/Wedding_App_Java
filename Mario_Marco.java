@@ -47,12 +47,21 @@ import myClasses.Person;
 					guestId++ ;
 				}
 				
-			
+
+			for (int i = 0; i < guestId; i++) {
+						
+					System.out.print(guests[i] + "\n");
+						
+					}
+
 			
 			//The date of the wedding
 			
 			java.util.Date date = new java.util.Date();
+
 		    System.out.println(date);
+
+		    System.out.println("The big day is here!  "+ "\n" + date);
 					
 			
 			System.out.println("Please enter number of guests attending the wedding: \n");
@@ -64,8 +73,14 @@ import myClasses.Person;
 			System.out.println("Please enter the desired number of people at each table: \n ");
 					
 					
+
 						
 			TableSize = scanner.nextInt(); // Gathers user data for size of each table
+
+					Scanner scanner1 = new Scanner(System.in); //take input
+						
+						TableSize = scanner.nextInt(); // Gathers user data for size of each table
+
 					
 					
 					
